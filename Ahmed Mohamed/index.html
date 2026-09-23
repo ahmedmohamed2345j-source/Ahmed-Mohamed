@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahmed Mohamed</title>
+<style>
+  :root{
+    --bg-top:#0a1a3a;
+    --bg-bottom:#050d1f;
+    --card:#0f2247;
+    --accent:#3b82f6;
+    --text:#eaf1ff;
+    --muted:#9db4d9;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    min-height:100vh;
+    background:
+      radial-gradient(120% 60% at 50% 0%, rgba(90,150,255,0.35) 0%, rgba(90,150,255,0) 60%),
+      linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
+    color:var(--text);
+    display:flex;
+    justify-content:center;
+    padding:40px 16px 60px;
+  }
+  .page{
+    width:100%;
+    max-width:420px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+  }
+  .avatar-wrap{
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    overflow:hidden;
+    border:3px solid rgba(255,255,255,0.15);
+    box-shadow:0 8px 30px rgba(0,0,0,0.4), 0 0 0 6px rgba(59,130,246,0.08);
+    margin-bottom:18px;
+  }
+  .avatar-wrap img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .name{
+    font-size:22px;
+    font-weight:700;
+    letter-spacing:0.3px;
+    margin-bottom:6px;
+  }
+  .phone{
+    font-size:15px;
+    color:var(--muted);
+    margin-bottom:28px;
+    text-decoration:none;
+  }
+  .links{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+  }
+  .link-row{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    background:var(--card);
+    border:1px solid rgba(255,255,255,0.06);
+    border-radius:16px;
+    padding:14px 18px;
+    text-decoration:none;
+    color:var(--text);
+    transition:transform .15s ease, background .15s ease;
+  }
+  .link-row:active{
+    transform:scale(0.98);
+    background:#132a56;
+  }
+  .icon{
+    width:26px;
+    height:26px;
+    flex-shrink:0;
+  }
+  .icon svg{
+    width:100%;
+    height:100%;
+    fill:none;
+    stroke:var(--text);
+    stroke-width:1.6;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+  .link-text{
+    font-size:16px;
+    font-weight:500;
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ============================================================
+       الصورة الشخصية:
+       غيّر الرابط في src="..." بصورتك (رابط مباشر لصورة أونلاين)
+       ============================================================ -->
+  <div class="avatar-wrap">
+    <img src="am.jpeg" alt="Ahmed Mohamed">
+  </div>
+
+  <div class="name">Ahmed Mohamed</div>
+  <a class="phone" href="data:text/vcard;charset=utf-8,BEGIN%3AVCARD%0AVERSION%3A3.0%0AFN%3AAhmed%20Mohamed%0ATEL%3BTYPE%3DCELL%3A%2B201503152836%0AEND%3AVCARD" download="Ahmed Mohamed.vcf">+20 150 315 2836</a>
+
+  <div class="links">
+
+    <!-- واتساب: يفتح شات مباشر على الرقم -->
+    <a class="link-row" href="https://wa.me/201503152836" target="_blank" rel="noopener">
+      <span class="icon">
+        <svg viewBox="0 0 24 24"><path d="M17.6 6.3A8 8 0 0 0 4.3 16.3L3 21l4.8-1.3a8 8 0 0 0 11.8-6.9 8 8 0 0 0-2-6.5Z"/><path d="M9 8.5c-.3 1 .1 2.5 1.5 4s3 1.8 4 1.5"/></svg>
+      </span>
+      <span class="link-text">WhatsApp</span>
+    </a>
+
+    <!-- إنستجرام: ضع رابط البروفايل بتاعك هنا -->
+    <a class="link-row" href="INSTAGRAM_LINK_HERE" target="_blank" rel="noopener">
+      <span class="icon">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"/></svg>
+      </span>
+      <span class="link-text">Instagram</span>
+    </a>
+
+    <!-- تيك توك: ضع رابط البروفايل بتاعك هنا -->
+    <a class="link-row" href="TIKTOK_LINK_HERE" target="_blank" rel="noopener">
+      <span class="icon">
+        <svg viewBox="0 0 24 24"><path d="M14 3v10.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M14 3c0 2.5 2 4.5 4.5 4.5"/></svg>
+      </span>
+      <span class="link-text">TikTok</span>
+    </a>
+
+    <!-- سناب شات: ضع رابط البروفايل بتاعك هنا -->
+    <a class="link-row" href="SNAPCHAT_LINK_HERE" target="_blank" rel="noopener">
+      <span class="icon">
+        <svg viewBox="0 0 24 24"><path d="M12 4c-3 0-5 2.3-5 5.3 0 1.4-.1 2.5-.4 3.1-.3.6-1 .9-1.6 1 .4.6 1 1 1.6 1.2-.4.6-1 1-1.6 1.2.8.7 1.9 1 2.7 1.1.1.7.5 1.3 1.4 1.3.8 0 1.3-.4 2.9-.4s2.1.4 2.9.4c.9 0 1.3-.6 1.4-1.3.8-.1 1.9-.4 2.7-1.1-.6-.2-1.2-.6-1.6-1.2.6-.2 1.2-.6 1.6-1.2-.6-.1-1.3-.4-1.6-1-.3-.6-.4-1.7-.4-3.1 0-3-2-5.3-5-5.3Z"/></svg>
+      </span>
+      <span class="link-text">Snapchat</span>
+    </a>
+
+  </div>
+
+</div>
+
+</body>
+</html>
